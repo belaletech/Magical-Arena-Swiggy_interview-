@@ -12,7 +12,6 @@ public class Arena {
                     takeTurn(secondAttacker, firstAttacker);
                 }
             }
-
             declareWinner(playerA, playerB);
         }
 
