@@ -40,7 +40,11 @@ public class Arena {
 
     public void printWinner(Player winner, Player playerA, Player playerB) {
         if (winner != null) {
-            System.out.println("The winner is " + (winner == playerA ? "Player A" : "Player B"));
+            if (winner == playerA) {
+                System.out.println("The winner is Player A");
+            } else {
+                System.out.println("The winner is Player B");
+            }
         } else {
             System.out.println("It's a draw!");
         }
