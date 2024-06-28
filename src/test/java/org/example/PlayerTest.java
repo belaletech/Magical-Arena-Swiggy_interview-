@@ -29,5 +29,14 @@ public class PlayerTest {
         player.setHealth(30);
         assertEquals(30, player.getHealth());
     }
-}
 
+    @Test
+    public void testGetStrength() {
+        assertEquals(5, player.getStrength());
+    }
+
+    @Test
+    public void testGetAttack() {
+        assertEquals(10, player.getAttack());
+    }
+}
