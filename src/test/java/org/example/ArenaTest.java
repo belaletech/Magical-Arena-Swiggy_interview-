@@ -1,5 +1,4 @@
 package org.example;
-
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -34,9 +33,9 @@ public class ArenaTest {
     }
 
     @Test
-    public void testStartFight() {
-        arena.startFight(playerA, playerB);
+    public void testFight() {
+        Player winner = arena.fight(playerA, playerB);
+        assertTrue(winner == playerA || winner == playerB);
         assertTrue(playerA.getHealth() <= 0 || playerB.getHealth() <= 0);
     }
 }
-

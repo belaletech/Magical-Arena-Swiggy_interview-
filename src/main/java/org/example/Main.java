@@ -6,6 +6,7 @@ public class Main {
         Player playerB = new Player(100, 10, 5);
 
         Arena arena = new Arena();
-        arena.startFight(playerA, playerB);
+        Player winner = arena.fight(playerA, playerB);
+        arena.printWinner(winner);
     }
 }
